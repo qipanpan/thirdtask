@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: url(images/bg3.JPG) no-repeat top center fixed;
+            background-size: 100% auto;
+        }
+        
+        .content {
+            width: 1400px;
+            height: 400px;
+            margin: auto auto;
+            margin-top: 30px;
+        }
+        
+        ul img {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 12px;
+            display: block;
+        }
+        
+        ul li {
+            display: inline-block;
+            margin-right: 50px;
+            list-style: none;
+        }
+        
+        ul a {
+            background: #fff;
+            display: inline;
+            color: black;
+            float: left;
+            padding: 10px 10px 15px;
+            font-size: 15px;
+            text-align: center;
+            text-decoration: none;
+            box-shadow: 0 5px 8px rgba(0, 0, 0, .25)
+        }
+        
+        ul li a:after {
+            content: attr(title);
+        }
+        
+        ul li:nth-child(1) a {
+            transform: rotate(-5deg);
+        }
+        
+        ul li:nth-child(3n) a {
+            transform: rotate(-20deg);
+        }
+        
+        ul li:nth-child(2n) a {
+            transform: rotate(10deg);
+            position: relative;
+        }
+        
+        ul li:nth-child(5n) a {
+            transform: rotate(5deg);
+            position: relative;
+        }
+        
+        ul li a:hover {
+            transform: scale(1.2, 1.2);
+            box-shadow: 0 5px 8px rgba(0, 0, 0, .5);
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="content">
+        <li>
+            <a href="#" title="相识"><img src="images/11.jpg"></a>
+        </li>
+        <li>
+            <a href="#" title="凝视"><img src="images/22.JPG"></a>
+        </li>
+        <li>
+            <a href="#" title="甜睡"><img src="images/33.JPG"></a>
+        </li>
+        <li>
+            <a href="#" title="逗乐"><img src="images/44.JPG"></a>
+        </li>
+        <li>
+            <a href="#" title="奔跑"><img src="images/55.JPG"></a>
+        </li>
+        <li>
+            <a href="#" title="漠视"><img src="images/66.JPG"></a>
+        </li>
+    </ul>
+</body>
+
+</html>
